@@ -18,6 +18,6 @@ public class MainActivity extends AppCompatActivity {
     public void on_click(View v){
         TextView tv = findViewById(R.id.msg);
         counter += 1;
-        tv.setText("counter: " + counter);
+        tv.setText("counter value: " + counter);
     }
 }

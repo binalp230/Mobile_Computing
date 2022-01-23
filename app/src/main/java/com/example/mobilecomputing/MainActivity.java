@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = findViewById(R.id.msg);
         counter += 1;
         tv.setText("counter value: " + counter);
+
+        Toast toast = Toast.makeText(this, "This is my toast message", Toast.LENGTH_LONG);
+        toast.show(); //code for toast msg
     }
 }
